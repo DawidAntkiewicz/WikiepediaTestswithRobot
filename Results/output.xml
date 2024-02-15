@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on darwin)" generated="2024-02-15T19:44:28.594693" rpa="false" schemaversion="5">
+<suite id="s1" name="testingSuite" source="/Users/antkiew/VSC_DawidAntkiewicz/robotAdvancedLearning/Tests/testingSuite.robot">
+<test id="s1-t1" name="Search field should find input elements" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-02-15T19:44:28.787043" level="INFO">Opening browser 'ff' to base url 'https://www.wikipedia.org/'.</msg>
+<arg>${url}</arg>
+<arg>ff</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-15T19:44:28.786400" elapsed="7.056931"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-15T19:44:35.848821" level="INFO">Typing text 'Wiertarka' into text field 'css:#searchInput'.</msg>
+<arg>css:#searchInput</arg>
+<arg>Wiertarka</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-15T19:44:35.846922" elapsed="0.618970"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-15T19:44:36.467678" level="INFO">Clicking button 'xpath://*[@type="submit"]'.</msg>
+<arg>xpath://*[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-15T19:44:36.466627" elapsed="1.697220"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-15T19:44:38.299817" level="INFO">Element 'css:.mw-page-title-main' contains text 'Wiertarka'.</msg>
+<arg>css:.mw-page-title-main</arg>
+<arg>Wiertarka</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-15T19:44:38.165685" elapsed="0.134343"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-15T19:44:38.301095" elapsed="1.408698"/>
+</kw>
+<doc>Bacis info about the TEST</doc>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-02-15T19:44:28.784192" elapsed="10.925920"/>
+</test>
+<doc>Basic info about the whole SUITE</doc>
+<status status="PASS" start="2024-02-15T19:44:28.597588" elapsed="11.113769"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testingSuite">testingSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
